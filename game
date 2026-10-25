@@ -1,0 +1,16 @@
+name1 = input("Player 1 name: ")
+name2 = input("Player 2 name: ")
+
+choice1 = input(f"{name1}, choose scissors, rock or paper: ").lower()
+choice2 = input(f"{name2}, choose scissors, rock or paper: ").lower()
+
+if choice1 == choice2:
+    print("It's a tie!")
+elif choice1 == "scissors" and choice2 == "paper":
+    print(name1, "wins!")
+elif choice1 == "rock" and choice2 == "scissors":
+    print(name1, "wins!")
+elif choice1 == "paper" and choice2 == "rock":
+    print(name1, "wins!")
+else:
+    print(name2, "wins!")
